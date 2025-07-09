@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:padding="16dp">
+
+	<RadioGroup
+        android:id="@+id/radioGroupOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+		<RadioButton
+			android:id="@+id/checkbox_sound"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Bật âm báo" />
+		<RadioButton
+			android:id="@+id/checkbox_tts"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Bật giọng nói"
+			android:checked="true"
+			/>
+	</RadioGroup>
+	
+    <Button android:id="@+id/btn_choose_file"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:text="Chọn âm báo" />
+    <SeekBar android:id="@+id/volume_seekbar"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+    <TextView
+		android:id="@+id/tv_battery_capacity"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+    <TextView
+		android:id="@+id/tv_battery_temp"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+    <TextView
+		android:id="@+id/tv_health"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+    <TextView
+		android:id="@+id/tv_plugged"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+    <TextView
+		android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+    <TextView
+		android:id="@+id/tv_technology"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+    <TextView
+		android:id="@+id/tv_voltage"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+    <TextView
+		android:id="@+id/tv_property"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+    
+	<CheckBox android:id="@+id/btn1Percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông báo thay đổi % pin" />
+	<Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bắt đầu giám sát pin" />
+</LinearLayout>
